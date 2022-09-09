@@ -1,0 +1,1 @@
+tried to use non-seriazizable values like mediaStream in react and was not able to show other peers stream in a component
