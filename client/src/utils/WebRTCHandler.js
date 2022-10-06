@@ -56,6 +56,15 @@ export const prepareNewPeerConnection = (connectedUserSocketID, isInitiator) => 
 		streams.set(connectedUserSocketID, stream);
 		store.dispatch(setStreams({ connectedUserSocketID }));
 	});
+	
+	/*
+	peers[connectedUserSocketID].on('data', (data) => {
+		// const messageData = JSON.parse(data);
+		// console.log('data event')
+
+		// appendMessage(messageData);
+	});
+	*/
 }
 
 export const removePeerConnection = (data) => {
